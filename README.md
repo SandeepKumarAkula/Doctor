@@ -41,6 +41,23 @@ The dev and build scripts automatically clear the `.next` cache first so stale c
 python backend.py
 ```
 
+## Deploy on Render
+
+This repository now includes a `render.yaml` blueprint with two services:
+
+- `gramaarogya-web` (Next.js frontend)
+- `gramaarogya-api` (optional Python API from `backend.py`)
+
+To deploy:
+
+1. Push the repository to GitHub.
+2. In Render, click **New +** -> **Blueprint**.
+3. Connect your GitHub repository.
+4. Render will detect `render.yaml` and create both services.
+5. Wait for both deploys to finish, then open the `gramaarogya-web` URL.
+
+If you only want the frontend, you can disable or remove the `gramaarogya-api` service from `render.yaml` before creating the Blueprint.
+
 ## Offline AI behavior
 
 The AI-like behavior is simulated with deterministic synthetic examples bundled in `lib/synthetic-ai.ts` and `backend.py`.
