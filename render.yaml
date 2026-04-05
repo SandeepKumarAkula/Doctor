@@ -11,14 +11,3 @@ services:
         value: 20
       - key: NODE_ENV
         value: production
-
-  - type: web
-    name: gramaarogya-api
-    runtime: python
-    plan: free
-    autoDeploy: true
-    buildCommand: pip install -r requirements.txt
-    startCommand: python backend.py
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.11
