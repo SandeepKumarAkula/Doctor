@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react"
 import Link from "next/link"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { findNearbyHealthCenters, type NearbyCenter } from "@/lib/synthetic-ai"
+import Navbar from "../../components/navbar"
+import Footer from "../../components/footer"
+import { findNearbyHealthCenters, type NearbyCenter } from "../../lib/synthetic-ai"
 
 const defaultLocation = { lat: 19.076, lng: 72.8777, label: "Mumbai" }
 

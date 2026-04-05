@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { searchDoctors, type DoctorMatch } from "@/lib/synthetic-ai"
+import Navbar from "../../components/navbar"
+import Footer from "../../components/footer"
+import { searchDoctors, type DoctorMatch } from "../../lib/synthetic-ai"
 
 const appointmentTimes = ["09:00", "10:30", "12:00", "14:00", "15:30", "17:00"]
 
