@@ -10,7 +10,6 @@ export const navLinks: NavLink[] = [
   { href: "/news-help", label: "AarogyaPulse" },
   { href: "/health-insights", label: "AarogyaView" },
   { href: "/manage", label: "Control Center" },
-  { href: "/our-team", label: "AarogyaParivar" },
 ]
 
 export const quickStats = [
